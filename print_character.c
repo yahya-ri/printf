@@ -7,17 +7,6 @@
  */
 int prt_c(va_list args)
 {
-	char str;
-
-	str = va_arg(args, int);
-
-	if (str == '\0')
-	{
-		return (0);
-	}
-	else
-	{
-		_putchar(str);
-		return (1);
-	}
+	_putchar(va_arg(args, int));
+	return (1);
 }
