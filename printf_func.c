@@ -17,10 +17,14 @@ int _printf(const char *format, ...)
 	int i, j, prted = 0;
 
 	va_start(args, format);
+	if (!format)
+		return (-1);
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
 		{
+			if (!format[i + 1])
+				return (-1);
 			j = 0;
 			while (specs[j].cr && format[i + 1] != *(specs[j].cr))
 				j++;
