@@ -5,6 +5,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+
 int _putchar(char);
 int _printf(const char *format, ...);
 
@@ -23,6 +24,8 @@ typedef struct op
 int prt_c(va_list args);
 int prt_s(va_list args);
 int prt_p(va_list args __attribute__((unused)));
+int prt_i(va_list args);
+int prt_d(va_list args);
 
 
 #endif

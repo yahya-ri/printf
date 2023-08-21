@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	spec specs[] = {
-		{"c", prt_c}, {"s", prt_s}, {"%", prt_p}, {NULL, NULL}
+		{"c", prt_c}, {"s", prt_s}, {"%", prt_p}, {"i", prt_i}, {"d", prt_d}, {NULL, NULL}
 	};
 	int i, j, prted = 0;
 
