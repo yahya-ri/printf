@@ -39,9 +39,9 @@ int main() {
     char ch = 'A';
     const char *str = "Hello, ALX!";
 
-    my_printf("Character: %c\n", ch);
-    my_printf("String: %s\n", str);
-    my_printf("Integer: %d\n", num);
+    _printf("Character: %c\n", ch);
+    _printf("String: %s\n", str);
+    _printf("Integer: %d\n", num);
 
     return 0;
 }
